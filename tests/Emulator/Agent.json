@@ -1,0 +1,311 @@
+{
+    "emulates": "agent",
+    "provides": {
+        "host": {
+            "Memory": {
+                "total": 8192864256,
+                "available": 7154810880,
+                "used": 1406787584,
+                "usedPercent": 17.17088847126628,
+                "free": 1683918848
+            },
+            "CPU": [
+                {
+                    "cpu": 0,
+                    "vendorId": "",
+                    "family": "",
+                    "model": "",
+                    "stepping": 0,
+                    "physicalId": "",
+                    "coreId": "0",
+                    "cores": 1,
+                    "modelName": "",
+                    "mhz": 1500,
+                    "cacheSize": 0,
+                    "flags": [
+                        "fp",
+                        "asimd",
+                        "evtstrm",
+                        "crc32",
+                        "cpuid"
+                    ],
+                    "microcode": ""
+                }
+            ],
+            "Host": {
+                "hostname": "hashicorp-consul-server-2",
+                "uptime": 6855759,
+                "bootTime": 1620226737,
+                "procs": 1,
+                "os": "linux",
+                "platform": "alpine",
+                "platformFamily": "alpine",
+                "platformVersion": "3.13.5",
+                "kernelVersion": "5.10.17-v8+",
+                "kernelArch": "aarch64",
+                "virtualizationSystem": "",
+                "virtualizationRole": "",
+                "hostId": "7a8ef887-9dbe-4ed3-b45b-c04d7ee6476f"
+            },
+            "Disk": {
+                "path": "/",
+                "fstype": "",
+                "total": 125550247936,
+                "free": 93488398336,
+                "used": 26909102080,
+                "usedPercent": 22.350216563486036,
+                "inodesTotal": 7684080,
+                "inodesUsed": 442088,
+                "inodesFree": 7241992,
+                "inodesUsedPercent": 5.753297727249065
+            },
+            "CollectionTime": 1627082496166088783,
+            "Errors": null
+        },
+        "members": [
+            {
+                "Name": "foobar",
+                "Addr": "10.1.10.12",
+                "Port": 8301,
+                "Tags": {
+                    "bootstrap": "1",
+                    "dc": "dc1",
+                    "port": "8300",
+                    "role": "consul"
+                },
+                "Status": 1,
+                "ProtocolMin": 1,
+                "ProtocolMax": 2,
+                "ProtocolCur": 2,
+                "DelegateMin": 1,
+                "DelegateMax": 3,
+                "DelegateCur": 3
+            }
+        ],
+        "self": {
+            "Config": {
+                "Datacenter": "dc1",
+                "NodeName": "foobar",
+                "NodeID": "9d754d17-d864-b1d3-e758-f3fe25a9874f",
+                "Server": true,
+                "Revision": "deadbeef",
+                "Version": "1.0.0"
+            },
+            "DebugConfig": {
+            },
+            "Coord": {
+                "Adjustment": 0,
+                "Error": 1.5,
+                "Vec": [0,0,0,0,0,0,0,0]
+            },
+            "Member": {
+                "Name": "foobar",
+                "Addr": "10.1.10.12",
+                "Port": 8301,
+                "Tags": {
+                    "bootstrap": "1",
+                    "dc": "dc1",
+                    "id": "40e4a748-2192-161a-0510-9bf59fe950b5",
+                    "port": "8300",
+                    "role": "consul",
+                    "vsn": "1",
+                    "vsn_max": "1",
+                    "vsn_min": "1"
+                },
+                "Status": 1,
+                "ProtocolMin": 1,
+                "ProtocolMax": 2,
+                "ProtocolCur": 2,
+                "DelegateMin": 2,
+                "DelegateMax": 4,
+                "DelegateCur": 4
+            },
+            "Meta": {
+                "instance_type": "i2.xlarge",
+                "os_version": "ubuntu_16.04"
+            }
+        },
+        "metrics": {
+            "Timestamp": "2017-08-08 02:55:10 +0000 UTC",
+            "Gauges": [
+                {
+                    "Name": "consul.consul.session_ttl.active",
+                    "Value": 0,
+                    "Labels": {}
+                },
+                {
+                    "Name": "consul.runtime.alloc_bytes",
+                    "Value": 4704344,
+                    "Labels": {}
+                },
+                {
+                    "Name": "consul.runtime.free_count",
+                    "Value": 74063,
+                    "Labels": {}
+                }
+            ],
+            "Points": [],
+            "Counters": [
+                {
+                    "Name": "consul.consul.catalog.service.query",
+                    "Count": 1,
+                    "Sum": 1,
+                    "Min": 1,
+                    "Max": 1,
+                    "Mean": 1,
+                    "Stddev": 0,
+                    "Labels": {
+                        "service": "consul"
+                    }
+                },
+                {
+                    "Name": "consul.raft.apply",
+                    "Count": 1,
+                    "Sum": 1,
+                    "Min": 1,
+                    "Max": 1,
+                    "Mean": 1,
+                    "Stddev": 0,
+                    "Labels": {}
+                }
+            ],
+            "Samples": [
+                {
+                    "Name": "consul.consul.http.GET.v1.agent.metrics",
+                    "Count": 1,
+                    "Sum": 0.1817069947719574,
+                    "Min": 0.1817069947719574,
+                    "Max": 0.1817069947719574,
+                    "Mean": 0.1817069947719574,
+                    "Stddev": 0,
+                    "Labels": {}
+                },
+                {
+                    "Name": "consul.consul.http.GET.v1.catalog.service._",
+                    "Count": 1,
+                    "Sum": 0.23342099785804749,
+                    "Min": 0.23342099785804749,
+                    "Max": 0.23342099785804749,
+                    "Mean": 0.23342099785804749,
+                    "Stddev": 0,
+                    "Labels": {}
+                },
+                {
+                    "Name": "consul.serf.queue.Query",
+                    "Count": 20,
+                    "Sum": 0,
+                    "Min": 0,
+                    "Max": 0,
+                    "Mean": 0,
+                    "Stddev": 0,
+                    "Labels": {}
+                }
+            ]
+        },
+        "streamLogsText": "YYYY/MM/DD HH:MM:SS [INFO] raft: Initial configuration (index=1): [{Suffrage:Voter ID:127.0.0.1:8300 Address:127.0.0.1:8300}]\nYYYY/MM/DD HH:MM:SS [INFO] raft: Node at 127.0.0.1:8300 [Follower] entering Follower state (Leader: \"\")\nYYYY/MM/DD HH:MM:SS [INFO] serf: EventMemberJoin: machine-osx 127.0.0.1\nYYYY/MM/DD HH:MM:SS [INFO] consul: Adding LAN server machine-osx (Addr: tcp/127.0.0.1:8300) (DC: dc1)",
+        "checks": {
+            "ping_google": {
+                "Node": "local",
+                "CheckID": "ping_google",
+                "Name": "Check if Google is reachable",
+                "Status": "critical",
+                "Notes": "Ensure that we are able to reach google",
+                "Output": "",
+                "ServiceID": "",
+                "ServiceName": "",
+                "ServiceTags": [],
+                "Type": "ttl",
+                "ExposedPort": 0,
+                "Definition": [],
+                "CreateIndex": 0,
+                "ModifyIndex": 0
+            }
+        },
+        "services": {
+            "redis1": {
+                "ID": "redis1",
+                "Service": "redis",
+                "Tags": ["primary", "v1"],
+                "Meta": [],
+                "Port": 8000,
+                "Address": "127.0.0.1",
+                "SocketPath": "",
+                "TaggedAddresses": {
+                    "lan_ipv4": {
+                        "Address": "127.0.0.1",
+                        "Port": 8000
+                    },
+                    "wan_ipv4": {
+                        "Address": "127.0.0.1",
+                        "Port": 8000
+                    }
+                },
+                "Weights": {
+                    "Passing": 10,
+                    "Warning": 1
+                },
+                "EnableTagOverride": false,
+                "Datacenter": "dc0"
+            }
+        },
+        "serviceConfiguration": {
+            "ID": "redis1",
+            "Service": "redis",
+            "Tags": ["primary", "v1"],
+            "Meta": [],
+            "Port": 8000,
+            "Address": "127.0.0.1",
+            "SocketPath": "",
+            "TaggedAddresses": {
+                "lan_ipv4": {
+                    "Address": "127.0.0.1",
+                    "Port": 8000
+                },
+                "wan_ipv4": {
+                    "Address": "127.0.0.1",
+                    "Port": 8000
+                }
+            },
+            "Weights": {
+                "Passing": 10,
+                "Warning": 1
+            },
+            "EnableTagOverride": false,
+            "Datacenter": "dc0"
+        },
+        "serviceHealth": [
+            {
+                "AggregatedStatus": "passing",
+                "Service": {
+                    "ID": "redis1",
+                    "Service": "redis",
+                    "Tags": [
+                        "primary",
+                        "v1"
+                    ],
+                    "Meta": [],
+                    "Port": 8000,
+                    "Address": "127.0.0.1",
+                    "SocketPath": "",
+                    "TaggedAddresses": {
+                        "lan_ipv4": {
+                            "Address": "127.0.0.1",
+                            "Port": 8000
+                        },
+                        "wan_ipv4": {
+                            "Address": "127.0.0.1",
+                            "Port": 8000
+                        }
+                    },
+                    "Weights": {
+                        "Passing": 10,
+                        "Warning": 1
+                    },
+                    "EnableTagOverride": false,
+                    "Datacenter": "dc0"
+                },
+                "Checks": []
+            }
+        ]
+    }
+}

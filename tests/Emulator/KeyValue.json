@@ -1,0 +1,61 @@
+{
+    "emulates": "kv",
+    "provides": [
+        {
+            "LockIndex": 0,
+            "Key": "consul-laravel/",
+            "Flags": 0,
+            "Value": null,
+            "CreateIndex": 1,
+            "ModifyIndex": 1
+        },
+        {
+            "LockIndex": 0,
+            "Key": "consul-laravel/example_string",
+            "Flags": 0,
+            "Value": "eyJ0eXBlIjogInN0cmluZyIsICJ2YWx1ZSI6ICJleGFtcGxlIHN0cmluZyJ9",
+            "CreateIndex": 2,
+            "ModifyIndex": 2
+        },
+        {
+            "LockIndex": 0,
+            "Key": "test/",
+            "Flags": 0,
+            "Value": null,
+            "CreateIndex": 3,
+            "ModifyIndex": 3
+        },
+        {
+            "LockIndex": 0,
+            "Key": "test/value_one",
+            "Flags": 0,
+            "Value": "dGVzdC92YWx1ZV9vbmU=",
+            "CreateIndex": 4,
+            "ModifyIndex": 4
+        },
+        {
+            "LockIndex": 0,
+            "Key": "test/value_three",
+            "Flags": 0,
+            "Value": "dGVzdC92YWx1ZV90aHJlZQ==",
+            "CreateIndex": 6,
+            "ModifyIndex": 6
+        },
+        {
+            "LockIndex": 0,
+            "Key": "test/value_two",
+            "Flags": 0,
+            "Value": "dGVzdC92YWx1ZV90d28=",
+            "CreateIndex": 5,
+            "ModifyIndex": 5
+        },
+        {
+            "LockIndex": 0,
+            "Key": "root_value",
+            "Flags": 0,
+            "Value": "cm9vdF92YWx1ZQ==",
+            "CreateIndex": 7,
+            "ModifyIndex": 7
+        }
+    ]
+}

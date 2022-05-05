@@ -1,0 +1,200 @@
+{
+    "emulates": "acl",
+    "provides": {
+        "bootstrap": {
+            "ID": "527347d3-9653-07dc-adc0-598b8f2b0f4d",
+            "AccessorID": "b5b1a918-50bc-fc46-dec2-d481359da4e3",
+            "SecretID": "527347d3-9653-07dc-adc0-598b8f2b0f4d",
+            "Description": "Bootstrap Token (Global Management)",
+            "Policies": [
+                {
+                    "ID": "00000000-0000-0000-0000-000000000001",
+                    "Name": "global-management"
+                }
+            ],
+            "Local": false,
+            "CreateTime": "2018-10-24T10:34:20.843397-04:00",
+            "Hash": "oyrov6+GFLjo/KZAfqgxF/X4J/3LX0435DOBy9V22I0=",
+            "CreateIndex": 12,
+            "ModifyIndex": 12
+        },
+        "replication": {
+            "Enabled": true,
+            "Running": true,
+            "SourceDatacenter": "dc0",
+            "ReplicationType": "tokens",
+            "ReplicationIndex": 1,
+            "ReplicationTokenIndex": 1,
+            "LastSuccess": "2021-08-26T08:00:00Z",
+            "LastError": "2021-08-25T08:00:00Z"
+        },
+        "rules/translate": "agent_prefix \"\" { policy = \"read\" }",
+        "rules/translate/accessor_id": "agent_prefix \"\" { policy = \"read\" }",
+        "createToken": {
+            "AccessorID": "6a1253d2-1785-24fd-91c2-f8e78c745511",
+            "SecretID": "45a3bd52-07c7-47a4-52fd-0745e0cfe967",
+            "CreateTime": "2018-10-24T12:25:06.921933-04:00",
+            "Hash": "UuiRkOQPRCvoRZHRtUxxbrmwZ5crYrOdZ0Z1FTFbTbA=",
+            "CreateIndex": 59,
+            "ModifyIndex": 59
+        },
+        "readToken": {
+            "AccessorID": "6a1253d2-1785-24fd-91c2-f8e78c745511",
+            "SecretID": "<hidden>",
+            "Description": "Agent token for 'node1'",
+            "Policies": [
+                {
+                    "ID": "165d4317-e379-f732-ce70-86278c4558f7",
+                    "Name": "node1-write"
+                },
+                {
+                    "ID": "e359bd81-baca-903e-7e64-1ccd9fdc78f5",
+                    "Name": "node-read"
+                }
+            ],
+            "Local": false,
+            "CreateTime": "2018-10-24T12:25:06.921933-04:00",
+            "Hash": "UuiRkOQPRCvoRZHRtUxxbrmwZ5crYrOdZ0Z1FTFbTbA=",
+            "CreateIndex": 59,
+            "ModifyIndex": 59
+        },
+        "listTokens": [
+            {
+                "AccessorID": "6a1253d2-1785-24fd-91c2-f8e78c745511",
+                "SecretID": "<hidden>",
+                "Description": "Agent token for 'my-agent'",
+                "Local": false,
+                "CreateTime": "2018-10-24T12:25:06.921933-04:00",
+                "Hash": "UuiRkOQPRCvoRZHRtUxxbrmwZ5crYrOdZ0Z1FTFbTbA=",
+                "CreateIndex": 59,
+                "ModifyIndex": 59
+            },
+            {
+                "AccessorID": "00000000-0000-0000-0000-000000000002",
+                "SecretID": "<hidden>",
+                "Description": "Anonymous Token",
+                "Local": false,
+                "CreateTime": "0001-01-01T00:00:00Z",
+                "Hash": "RNVFSWnfd5DUOuB8vplp+imivlIna3fKQVnkUHh21cA=",
+                "CreateIndex": 5,
+                "ModifyIndex": 5
+            }
+        ],
+        "createPolicy": {
+            "ID": "e359bd81-baca-903e-7e64-1ccd9fdc78f5",
+            "Hash": "OtZUUKhInTLEqTPfNSSOYbRiSBKm3c4vI2p6MxZnGWc=",
+            "CreateIndex": 14,
+            "ModifyIndex": 14
+        },
+        "readPolicy": {
+            "ID": "e359bd81-baca-903e-7e64-1ccd9fdc78f5",
+            "Name": "node-read",
+            "Description": "Grants read access to all node information",
+            "Rules": "node_prefix \"\" { policy = \"read\"}",
+            "Datacenters": ["dc1"],
+            "Hash": "OtZUUKhInTLEqTPfNSSOYbRiSBKm3c4vI2p6MxZnGWc=",
+            "CreateIndex": 14,
+            "ModifyIndex": 14
+        },
+        "listPolicies": [
+            {
+                "CreateIndex": 4,
+                "Datacenters": null,
+                "Description": "Builtin Policy that grants unlimited access",
+                "Hash": "swIQt6up+s0cV4kePfJ2aRdKCLaQyykF4Hl1Nfdeumk=",
+                "ID": "00000000-0000-0000-0000-000000000001",
+                "ModifyIndex": 4,
+                "Name": "global-management"
+            },
+            {
+                "CreateIndex": 14,
+                "Datacenters": ["dc1"],
+                "Description": "Grants read access to all node information",
+                "Hash": "OtZUUKhInTLEqTPfNSSOYbRiSBKm3c4vI2p6MxZnGWc=",
+                "ID": "e359bd81-baca-903e-7e64-1ccd9fdc78f5",
+                "ModifyIndex": 14,
+                "Name": "node-read"
+            }
+        ],
+        "createRole": {
+            "ID": "aa770e5b-8b0b-7fcf-e5a1-8535fcc388b4",
+            "Hash": "mBWMIeX9zyUTdDMq8vWB0iYod+mKBArJoAhj6oPz3BI=",
+            "CreateIndex": 57,
+            "ModifyIndex": 57
+        },
+        "readRole": {
+            "ID": "aa770e5b-8b0b-7fcf-e5a1-8535fcc388b4",
+            "Name": "example-role",
+            "Description": "Showcases all input parameters",
+            "Policies": [
+                {
+                    "ID": "783beef3-783f-f41f-7422-7087dc272765",
+                    "Name": "node-read"
+                }
+            ],
+            "ServiceIdentities": [
+                {
+                    "ServiceName": "web"
+                },
+                {
+                    "ServiceName": "db",
+                    "Datacenters": ["dc1"]
+                }
+            ],
+            "NodeIdentities": [
+                {
+                    "NodeName": "node-1",
+                    "Datacenter": "dc2"
+                }
+            ],
+            "Hash": "mBWMIeX9zyUTdDMq8vWB0iYod+mKBArJoAhj6oPz3BI=",
+            "CreateIndex": 57,
+            "ModifyIndex": 57
+        },
+        "listRoles": [
+            {
+                "ID": "5e52a099-4c90-c067-5478-980f06be9af5",
+                "Name": "node-read",
+                "Description": "",
+                "Policies": [
+                    {
+                        "ID": "783beef3-783f-f41f-7422-7087dc272765",
+                        "Name": "node-read"
+                    }
+                ],
+                "Hash": "K6AbfofgiZ1BEaKORBloZf7WPdg45J/PipHxQiBlK1U=",
+                "CreateIndex": 50,
+                "ModifyIndex": 50
+            },
+            {
+                "ID": "aa770e5b-8b0b-7fcf-e5a1-8535fcc388b4",
+                "Name": "example-role",
+                "Description": "Showcases all input parameters",
+                "Policies": [
+                    {
+                        "ID": "783beef3-783f-f41f-7422-7087dc272765",
+                        "Name": "node-read"
+                    }
+                ],
+                "ServiceIdentities": [
+                    {
+                        "ServiceName": "web"
+                    },
+                    {
+                        "ServiceName": "db",
+                        "Datacenters": ["dc1"]
+                    }
+                ],
+                "NodeIdentities": [
+                    {
+                        "NodeName": "node-1",
+                        "Datacenter": "dc2"
+                    }
+                ],
+                "Hash": "mBWMIeX9zyUTdDMq8vWB0iYod+mKBArJoAhj6oPz3BI=",
+                "CreateIndex": 57,
+                "ModifyIndex": 57
+            }
+        ]
+    }
+}

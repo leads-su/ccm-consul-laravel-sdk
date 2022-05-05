@@ -1,0 +1,13 @@
+addReviewers: true
+numberOfReviewers: 1
+reviewers:
+ - izleads
+
+addAssignees: true
+assignees:
+ - izleads
+numberOfAssignees: 1
+
+skipKeywords:
+  - wip
+  - draft

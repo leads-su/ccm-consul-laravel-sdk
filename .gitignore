@@ -1,0 +1,6 @@
+/.idea
+/output
+/vendor
+/reports
+.php-cs-fixer.cache
+.phpunit.result.cache

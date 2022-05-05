@@ -1,0 +1,13 @@
+includes:
+    - phpstan-baseline.neon
+
+parameters:
+    level: 2
+    paths:
+        - src
+        - tests
+
+    ignoreErrors:
+        -
+            message: '#Call to an undefined static method Illuminate\\Support\\Facades\\Cache::set\(\)#'
+            path: src/Abstracts/AbstractService.php

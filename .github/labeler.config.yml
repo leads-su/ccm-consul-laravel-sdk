@@ -1,0 +1,18 @@
+type:build:
+  - ".github/**/*"
+  - ".coveralls.yml"
+  - ".gitignore"
+
+dependencies:
+  - "composer.json"
+  - "composer.lock"
+
+type:common:
+  - "src/**/*"
+
+type:tests:
+  - 'tests/**/*'
+  - 'phpunit.xml.dist'
+
+theme:docs:
+  - "README.md"

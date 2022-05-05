@@ -1,0 +1,79 @@
+{
+    "name": "leads-su/ccm-consul-laravel-sdk",
+    "description": "PHP SDK to communicate with Consul API for Laravel",
+    "version": "1.0.0",
+    "license": "MIT",
+    "keywords": [
+        "consul",
+        "laravel",
+        "sdk"
+    ],
+    "homepage": "https://github.com/leads-su/ccm-consul-laravel-sdk",
+    "authors": [
+        {
+            "name": "Zhivolupov Ivan",
+            "email": "iz@leads.su",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "require-dev": {
+        "leads-su/ccm-testing": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Consul\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Consul\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Consul\\Providers\\ConsulServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "psr": [
+            "vendor/bin/php-cs-fixer fix"
+        ],
+        "sa": [
+            "vendor/bin/phpstan"
+        ],
+        "test": [
+            "phpunit --color=always"
+        ],
+        "test:coverage": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit --color=always --coverage-clover=\"output/code-coverage/clover.xml\""
+        ],
+        "test:coverage-text": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit --color=always --coverage-text"
+        ],
+        "test:coverage-gitlab": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit --color=never --coverage-text --coverage-clover=\"reports/clover.xml\" --coverage-cobertura=\"reports/cobertura.xml\""
+        ],
+        "test:coverage-html": [
+            "@putenv XDEBUG_MODE=coverage",
+            "phpunit --color=always --coverage-html=\"output/code-coverage\""
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "secure-http": false
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
