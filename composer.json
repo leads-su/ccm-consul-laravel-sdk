@@ -1,7 +1,7 @@
 {
     "name": "leads-su/ccm-consul-laravel-sdk",
     "description": "PHP SDK to communicate with Consul API for Laravel",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "license": "MIT",
     "keywords": [
         "consul",
